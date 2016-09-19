@@ -19,7 +19,8 @@ public class CurrencyConverter {
 	}
 	public static double toDollar(double won) {
 		// 한국 원화를 달러로 변환
-System.out.println(rate);
+		
+		System.out.println(rate);
 		double dollor = (double)won /rate ;
 		return dollor;
 		
