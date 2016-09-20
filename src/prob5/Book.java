@@ -10,20 +10,22 @@ public class Book {
 		this.bookNo=bookNo;
 		this.author=author;
 		this.title=title;		
+		stateCode=1;
 	}
 	public Book(){
 		
 	}
 	public void rent(){
-		stateCode=1;
+		stateCode=0;
 		System.out.println(title+"이(가) 대여 됐습니다.");
 	}
 	public void print(){
-		if(stateCode==0){
-			System.out.println("책 제목 : "+title+", 작가 : "+author+", 대여가능");			
-		}else{
-			System.out.println("책 제목 : "+title+", 작가 : "+author+", 대여중");
-		}
+//		if(stateCode==1){
+//			System.out.println("책 제목 : "+title+", 작가 : "+author+", 대여가능");			
+//		}else{
+//			System.out.println("책 제목 : "+title+", 작가 : "+author+", 대여중");
+//		}
+		System.out.println("책 제목 : "+title+", 작가 : "+ author +(stateCode == 1 ? " 대여가능" : " 대여중"));
 
 		
 	}

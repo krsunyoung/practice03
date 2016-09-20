@@ -23,17 +23,17 @@ public class Prob1 {
 			 * if(i == c.length/2){ newArray[i]=c[i]; }else if(i <c.length/2){
 			 * newArray[i]=c[c.length-i]; }else{ newArray[c.length/2+i]=c[i]; }
 			 */ 
-	
 			
-
+			newArray[i] = c[c.length-i-1];
+			
 		}
 
-		return c;
+		return newArray;
 
 	}
 
 	public static void printCharArray(char[] array) {
 		/* 구현코드 */
-
+		System.out.println(array);
 	}
 }

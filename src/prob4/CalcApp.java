@@ -30,16 +30,29 @@ public class CalcApp {
 
 			switch (operator) {
 			case "+":{
-				result = lValue + rValue;
+				Add add = new Add();
+				add.setValue(lValue, rValue);
+				//result = lValue + rValue;
+				System.out.println(add.result());
 				break;
 			}
 			case "-":
-				result = lValue - rValue;
+				Sub sub = new Sub();
+				sub.setValue(lValue, rValue);
+				System.out.println(sub.result());
+				//result = lValue - rValue;
 				break;
 			case "*":
-				result = lValue * rValue;
+				Mul mul = new Mul();
+				mul.setValue(lValue, rValue);
+				System.out.println(mul.result());
+				//result = lValue * rValue;
 				break;
 			case "/":
+				Div div = new Div();
+				div.setValue(lValue, rValue);
+				System.out.println(div.result());
+				//result = lValue * rValue;
 				result = lValue / rValue;
 				break;
 			default:
@@ -47,10 +60,10 @@ public class CalcApp {
 
 				break;
 			}
-
-			System.out.println(lValue +" "+ operator+" "+ rValue);
-			System.out.println( result );
-			
+//
+//			System.out.println(lValue +" "+ operator+" "+ rValue);
+//			System.out.println( result );
+//			
 			if ("quit".equals(expression) == true) {
 				break;
 			}
