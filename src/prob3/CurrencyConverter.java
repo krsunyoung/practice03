@@ -14,7 +14,8 @@ public class CurrencyConverter {
 
 	public static void setRate(double rate) {
 		// 환율 설정(KRW/$1)
-		CurrencyConverter.rate=rate; //this가 안되는 이유는 static을 사용하기 때문에. 클래스 명을 써줘야 한다.
+		CurrencyConverter.rate=rate; 
+		//this가 안되는 이유는 static을 사용하기 때문에. 클래스 명을 써줘야 한다. 위치가 틀리기 때문 area에 있어서?
 		
 	}
 	public static double toDollar(double won) {

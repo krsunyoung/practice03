@@ -29,9 +29,10 @@ public class CalcApp {
 			System.out.println(rValue);*/
 
 			switch (operator) {
-			case "+":
+			case "+":{
 				result = lValue + rValue;
 				break;
+			}
 			case "-":
 				result = lValue - rValue;
 				break;
