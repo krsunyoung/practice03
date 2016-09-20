@@ -1,15 +1,15 @@
 package prob4;
 
 public class Add {
-	private int a;
-	private int b;
+	private static  int a;
+	private static int b;
 	
-	public void setValue(int a , int b){
-		this.a=a;
-		this.b=b;
+	public static void setValue(int a , int b){
+		Add.a=a;
+		Add.b=b;
 	}
 	
-	public int result(){
+	public static int result(){
 		return a+b;
 	}
 	
